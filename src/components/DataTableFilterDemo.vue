@@ -204,20 +204,21 @@
 
 <script>
 import { ref ,onMounted } from 'vue';
-import CustomerService from './service/CustomerService';
+import CustomerService from '../service/CustomerService';
 import {FilterMatchMode,FilterOperator} from 'primevue/api';
 
 export default {
+    name: 'DataTableFilterDemo',
     setup() {
         onMounted(() => {
             customerService.value.getCustomersLarge().then(data => {
-                customers1.value = data; 
+                customers1.value = data;
                 loading1.value = false;
                 customers1.value.forEach(customer => customer.date = new Date(customer.date));
             });
-        
+
             customerService.value.getCustomersLarge().then(data => {
-                customers2.value = data; 
+                customers2.value = data;
                 loading2.value = false;
                 customers2.value.forEach(customer => customer.date = new Date(customer.date));
             });

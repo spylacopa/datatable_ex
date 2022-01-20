@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-    import DataTableFilterDemo from "./DataTableFilterDemo.vue"
+    import DataTableFilterDemo from "./components/DataTableFilterDemo.vue"
 
     export const router = createRouter({
     history: createWebHistory(),

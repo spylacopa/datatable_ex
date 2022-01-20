@@ -5,7 +5,8 @@ import "primeicons/primeicons.css";
 import "./index.css";
 
 import { createApp } from "vue";
-import DataTableFilterDemo from "./DataTableFilterDemo.vue"
+import App from './App.vue';
+//import DataTableFilterDemo from "./DataTableFilterDemo.vue"
 import { router } from "./router";
 import PrimeVue from "primevue/config";
 import AutoComplete from 'primevue/autocomplete';
@@ -102,8 +103,8 @@ import TreeTable from 'primevue/treetable';
 import TriStateCheckbox from 'primevue/tristatecheckbox';
 import VirtualScroller from 'primevue/virtualscroller';
 
-
-const app = createApp(DataTableFilterDemo);
+const app = createApp(App);
+//const app = createApp(DataTableFilterDemo);
 
 app.use(PrimeVue, { ripple: true });
 app.use(ConfirmationService);

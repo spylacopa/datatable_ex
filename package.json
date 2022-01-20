@@ -7,20 +7,20 @@
   },
   "dependencies": {
     "vue-router": "^4.0.0-0",
-    "vue": "3.1.5",
-    "primevue": "^3.10.0",
-    "primeicons": "5.0.0",
-    "primeflex": "3.1.2",
-    "core-js": "^3.6.5",
-    "@babel/cli": "^7.4.4"
+    "vue": "^3.2.27",
+    "primevue": "^3.11.0",
+    "primeicons": "^5.0.0",
+    "primeflex": "^3.1.2",
+    "core-js": "^3.20.3",
+    "@babel/cli": "^7.16.8"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-babel": "~4.5.15",
+    "@vue/cli-plugin-eslint": "~4.5.15",
     "@vue/cli-service": "~4.5.15",
-    "@vue/compiler-sfc": "3.1.5",
+    "@vue/compiler-sfc": "^3.2.27",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
+    "eslint": "^6.8.0",
     "eslint-plugin-vue": "^7.0.0-0",
     "sass-loader": "^10.2.1",
     "sass": "^1.49.0"
