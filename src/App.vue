@@ -1,8 +1,11 @@
 <template>
   <div id="app">
     <div class="app-container">
-      <img alt="Vue logo" src="./assets/primevue-logo.png">
-      <DataTableFilterDemo />
+      <img alt="Vue logo" src="ets/primevue-logo.png">
+      <Menu />
+      <div class="layout-content">
+        <router-view />
+      </div>
       <form @submit.prevent="greet">
         <InputText type="text" v-model="text"/>
         <Button type="submit" label="Submit"/>
@@ -15,7 +18,7 @@
 </template>
 
 <script>
-import DataTableFilterDemo from './components/DataTableFilterDemo.vue'
+import Menu from './Menu'
 
 export default {
     data() {
@@ -31,7 +34,7 @@ export default {
         }
     },
     components: {
-      DataTableFilterDemo
+      Menu
     }
 }
 </script>

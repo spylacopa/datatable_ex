@@ -6,8 +6,8 @@ import "./index.css";
 
 import { createApp } from "vue";
 import App from './App.vue';
-//import DataTableFilterDemo from "./DataTableFilterDemo.vue"
-import { router } from "./router";
+import store from './store'
+import router from "./router";
 import PrimeVue from "primevue/config";
 import AutoComplete from 'primevue/autocomplete';
 import Accordion from 'primevue/accordion';
@@ -104,12 +104,12 @@ import TriStateCheckbox from 'primevue/tristatecheckbox';
 import VirtualScroller from 'primevue/virtualscroller';
 
 const app = createApp(App);
-//const app = createApp(DataTableFilterDemo);
 
 app.use(PrimeVue, { ripple: true });
 app.use(ConfirmationService);
 app.use(ToastService);
 app.use(router);
+app.use(store)
 
 app.directive('tooltip', Tooltip);
 app.directive('badge', BadgeDirective);

@@ -1,5 +1,4 @@
 {
-  "main": "src/demo/DataTableFilterDemo.vue",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -8,6 +7,7 @@
   "dependencies": {
     "vue-router": "^4.0.0-0",
     "vue": "^3.2.27",
+    "vuex": "^4.0.2",
     "primevue": "^3.11.0",
     "primeicons": "^5.0.0",
     "primeflex": "^3.1.2",
@@ -19,6 +19,7 @@
     "@vue/cli-plugin-eslint": "~4.5.15",
     "@vue/cli-service": "~4.5.15",
     "@vue/compiler-sfc": "^3.2.27",
+    "axios": "^0.25.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-plugin-vue": "^7.0.0-0",
