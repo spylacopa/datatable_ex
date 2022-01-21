@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="app-container">
-      <img alt="Vue logo" src="ets/primevue-logo.png">
+      <img alt="Vue logo" src="./assets/primevue-logo.png">
       <Menu />
       <div class="layout-content">
         <router-view />
