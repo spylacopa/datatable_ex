@@ -26,6 +26,10 @@ export default {
         label: 'StockArne',
         to: '/DataTableStockArne'
       },
+      {
+        label: 'DataTableStateDemo',
+        to: '/DataTableStateDemo'
+      }
     ]);
 
     const toggle = (event) => {

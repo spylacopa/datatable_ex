@@ -1,3 +1,4 @@
+
 export default class CustomerService {
 
     getCustomersSmall() {
@@ -25,3 +26,4 @@ export default class CustomerService {
         return fetch('https://www.primefaces.org/demo/data/customers?' + queryParams).then(res => res.json())
     }
 }
+    
