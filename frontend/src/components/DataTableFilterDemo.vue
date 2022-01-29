@@ -6,6 +6,7 @@
             <p>Filters are displayed in an overlay.</p>
             <DataTable :value="customers1" :paginator="true" class="p-datatable-customers" showGridlines :rows="10"
                 dataKey="id" v-model:filters="filters1" filterDisplay="menu" :loading="loading1" responsiveLayout="scroll"
+                       stateStorage="local" stateKey="dt-state-demo-local1"
                 :globalFilterFields="['name','country.name','representative.name','balance','status']">
                 <template #header>
                     <div class="flex justify-content-center">
