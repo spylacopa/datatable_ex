@@ -1,20 +1,14 @@
 <template>
-  <div id="app">
+
     <div class="app-container">
       <img alt="Vue logo" src="./assets/primevue-logo.png">
       <Menu />
       <div class="layout-content">
         <router-view />
       </div>
-      <form @submit.prevent="greet">
-        <InputText type="text" v-model="text"/>
-        <Button type="submit" label="Submit"/>
-        <h3>{{message}}</h3>
-      </form>
     </div>
 
     <Toast/>
-  </div>
 </template>
 
 <script>

@@ -126,7 +126,8 @@
             <p>Filters are displayed inline within a separate row.</p>
             <DataTable :value="customers2" :paginator="true" class="p-datatable-customers" :rows="10"
                 dataKey="id" v-model:filters="filters2" filterDisplay="row" :loading="loading2" responsiveLayout="scroll"
-                :globalFilterFields="['name','country.name','representative.name','status']">
+                       stateStorage="local" stateKey="dt-state-stock-master-data"
+                       :globalFilterFields="['name','country.name','representative.name','status']">
                 <template #header>
                     <div class="flex justify-content-end">
                         <span class="p-input-icon-left ">
